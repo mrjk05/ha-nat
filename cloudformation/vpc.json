@@ -34,8 +34,7 @@
            "DependsOn": "VPCGatewayAttachment",
            "Properties" : {
               "AssociatePublicIpAddress" : true,
-              "EbsOptimized" : false,
-              "IamInstanceProfile" : "arn:aws:iam::012345678901:instance-profile/NAT",
+              "EbsOptimized" : false,    
               "ImageId" : { "Ref": "NatImage" },
               "InstanceType" : "t2.small",
               "KeyName" : { "Ref": "KeyName" },
